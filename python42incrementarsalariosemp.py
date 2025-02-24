@@ -4,7 +4,7 @@ connection = oracledb.connect(user='SYSTEM', password='oracle', dsn='localhost/x
 print("Incrementar salario empleados")
 print("Introduzca incremento")
 incremento = int(input())
-print("Introduzca el oficio a incrementar:")
+print("Introduzca el oficio a incrementar")
 oficio = input()
 #CON CONSULTAS SQL SIEMPRE PARAM
 sqlupdate = "update EMP set SALARIO = SALARIO + :p1 where OFICIO=:p2"
